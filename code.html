@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .header{
+            border: 3px dashed seagreen;
+            text-align: center;
+        }
+        #headings{
+            color: red;
+        }
+        #headings h1, h3, h6{
+            color: blue;
+        }
+        p{
+            font-weight: 480;
+        }
+        .base a{
+            color: brown;
+            text-decoration: none;
+        }
+        .base a:active{
+            color: blue;
+            font-size: 20px;
+        }
+        #address h2{
+            font-style: italic;
+        }
+        #address address{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+        }
+        .artical article{
+            border: 2px solid black;
+            margin: 15px;
+        }
+        #main p{
+            padding-left: 12px;
+        }
+        #main h3{
+            color: black;
+            font-size: 22px;
+        }
+        #main h1{
+            text-align: center;
+        }
+        #navbar a{
+            color: black;
+            text-decoration: none;
+            padding-left: 50px;
+        }
+        #navbar a:hover{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        #discrip li{
+            list-style-type: armenian;
+        }
+        #figure img{
+            width: 100px;
+            transition: width 2s transform 2s;
+            transition-delay: 2s;
+        }
+        #figure img:hover{
+            width: 200px;
+            transform: rotate(180deg);
+        }
+
+        #detail summary:hover{
+            font-size: 22px;
+        }
+    </style>
+
+    <base href="https://en.wikipedia.org/wiki/Wikipedia" target="_blank">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>ASSIGNMENT#2</h1>
+        </div>
+        <br>
+        <hr><hr>
+        <div id="headings">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <hr><hr>
+        </div>
+    </header>
+
+    <section>
+        <div class="base">
+            <!-- BASE TAG -->
+            <h2>Base tag</h2>
+            <a href="">Click here</a>
+            <hr><hr>
+        </div>
+
+        <div id="address">
+            <!-- ADDRESS TAG -->
+            <h2>Address Tag</h2>
+            <address>
+                Name: Uswa Tahir <br>
+                E-mail: uswatahir@hotmail.com <br>
+                Contact Number: 042-xxxxxx <br>
+                Address: abc town, road xyz <br>
+            </address>
+            <hr><hr>
+        </div>
+
+        <div class="artical">
+            <!-- ARTICAL TAG -->
+            <h2>article tag</h2>
+            <article>
+                <h1>NTU</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint quaerat aut error natus cumque dolorum perspiciatis fuga dolor. Maiores, voluptates? Odio rem necessitatibus voluptate perspiciatis ad quibusdam obcaecati voluptatum!</p>
+
+            </article>
+            <hr><hr>
+        </div>
+
+        <div>
+
+        <div id="main">
+            <!-- MAIN TAG -->
+            <h2>main tag</h2> <br>
+            <main>
+                <h1>Uniworsities</h1>
+                <br>
+                <article>
+                    <h3>NTU</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, repudiandae, quisquam repellendus est commodi ut quod, corrupti excepturi itaque provident quae id minima. Fugiat modi beatae, doloremque ipsum exercitationem repellat.</p>
+                    <br>
+                    <h3>FAST</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consequuntur, eligendi atque debitis incidunt, doloribus minima commodi tempore accusantium fugit architecto aliquam nobis ipsum exercitationem repellendus sequi? Quidem, unde possimus.</p>
+                    <br>
+                    <h3>NUST</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum animi autem eos exercitationem nulla amet similique corporis quibusdam aspernatur possimus, facere harum. Aspernatur reiciendis aliquid iste non voluptate delectus nobis?</p>
+                </article>
+                <hr><hr>
+            </main>
+        </div>
+
+        <div id="navbar">
+            <!-- NAV TAG -->
+            <h2>nav tag</h2>
+            <br>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <hr><hr>
+        </div>
+
+        <div>
+            <!-- BLOCKQUOTE TAG -->
+            <h2>blockquote tag</h2>
+            <br>
+            <h1>According to wikipedia</h1>
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab a maxime sed molestias praesentium, modi, placeat quasi qui assumenda eum odio repellat adipisci. Impedit ex tempore provident dolor cumque?</blockquote>
+            <hr><hr>
+        </div>
+
+        <div>
+            <h2>Description tags:</h2>
+            <dl>
+                <ul>
+                    <li>
+                        <dt>National Textile Univerity</dt>
+                        <dd>Department of Computer Science</dd>
+                    </li>
+                </ul>
+            </dl>
+        </div>
+        <hr>
+        <hr>
+
+
+        <div id="figure">
+            <!--  FIGURE & FIGCAPTION TAG -->
+            <h2>figure & figcaption tag</h2>
+            <figure>
+                <img src="Images/sky1.jpg" alt="sky1">
+                <figcaption>Fig 1: Sky </figcaption>
+            </figure>
+        </div>
+        <hr><hr>
+
+        <h2>Unordered List:-</h2>
+        <ul>
+            <li>Textile Eng</li>
+            <li>Textile Designing</li>
+            <li>Animation Designing</li>
+            <li>Visual Arts</li>
+        </ul>
+        <hr>
+        <hr>
+
+        <h2>Ordered List:-</h2>
+        <ol>
+            <li>Information Technology</li>
+            <li>Softwere Eng</li>
+            <li>Artificial Intelligence</li>
+            <li>Computer Science</li>
+        </ol>
+        <hr>
+        <hr>
+
+        <div>
+            <!-- PARAGRAPH TAG -->
+            <h2>Paragraph tag</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati alias qui repellendus aliquid! Excepturi, non quos saepe adipisci nisi quam voluptate, a soluta, dolore natus eius quaerat expedita officiis perspiciatis?</p>
+            <hr><hr>
+        </div>
+
+        <h2>Pre Tag</h2>
+        <pre> NTU stands for :
+                             " National Textile Univerity "
+        </pre>
+        <hr>
+        <hr>
+
+        <h2>Abbreviation Tag:</h2>
+        <abbr title="National Textile Univerity">NTU</abbr>
+        <br>
+        <abbr title="Department Of Computer Science">DCS</abbr>
+        <hr>
+        <hr>
+        
+
+        <h2>Anchor Tag:</h2>
+        <a href="https://ntu.edu.pk" target="_blank">NTU</a><br>
+        <a href="#" target="_blank">XYZ
+        </a>
+        <hr>
+        <hr>
+
+
+            <!-- BOLD TAG -->
+            <h2>bold tag</h2>
+            <b>This is a bold line tag.</b>
+            <hr><hr>
+
+            <!-- BDI TAG -->
+            <h2>bdi tag</h2>
+            <ul>
+                <li>User <bdi>1</bdi>: 60 points</li>
+                <li>User <bdi>2</bdi>: 80 points</li>
+                <li>User <bdi> اسوہ</bdi>: 90 points</li>
+               </ul>
+            <hr><hr>
+
+            <!-- bdoTAG -->
+            <h2>bdo tag</h2>
+            <bdo dir="rtl">
+                This text will written from left to right.
+            </bdo>
+            <hr><hr>
+
+            <!-- CITE TAG -->
+            <h2>cite tag</h2>
+            <p>The way to get started is to quit talking and begin doing.</p>
+            <cite>-Walt Disney</cite>
+            <hr><hr>
+
+            <!-- CODE TAG -->
+            <h2>code tag</h2>
+            <pre><code>for(int i=0; i=5; i++)
+            {
+            cout: This is the code tag.
+            }</code>
+            </pre>
+            <hr><hr>
+
+            <!-- DATA TAG -->
+            <h2>Data tag</h2>
+            <ul>
+                <li><data value="5467">ABC</data></li>
+                <li><data value="7234">XYZ</data></li>
+            </ul>
+            <hr><hr>
+
+            <!-- DFN TAG -->
+            <h2>dfn tag</h2>
+            <p><dfn>HTML</dfn> stands for Hyper Text Markup Language.</p>
+            <hr><hr>
+
+            <!-- EM TAG -->
+            <h2>em tag</h2>
+            <p>This is an <em>emphasized</em> word.</p>
+            <hr><hr>
+
+            <!-- ITALIC TAG -->
+            <hr>
+            <h2>i tag</h2>
+            <p><i>This is an italic line.</i></p>
+            <hr><hr>
+            
+            <!-- KDB TAG -->
+            <h2>kdb tag</h2>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text.</p>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>V</kbd> to paste text.</p>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>X</kbd> to cut text.</p>
+            <hr><hr>
+
+            <!-- MARK TAG -->
+            <h2>mark tag</h2>
+            <p><mark>HTML</mark> stands for Hyper Text Markup Language.</p>
+            <hr><hr>
+
+            <!-- Q TAG -->
+            <h2>q tag</h2>
+            <p><q>The way to get started is to quit talking and begin doing.</q></p>
+            <hr><hr>
+
+            <!-- RUBY, RP AND RT TAG -->
+            <h2>ruby, rp and rt tag</h2>
+            <ruby>
+                漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+            </ruby>
+            <hr><hr>
+
+            <!-- STRIKE-TAG -->
+            <h2>strike tag</h2>
+            <p>HTML stands for <s>Hypter Text Markup Language.</s></p>
+            <hr><hr>
+
+            <!-- SAMP TAG -->
+            <h2>samp tag</h2>
+            <samp>Error 404! <br> File not found.</samp>
+            <hr><hr>
+
+            <!-- SMALL TAG -->
+            <h2>small tag</h2>
+            <p>HTML stands for <small>Hypter Text Markup Language.</small></p>
+            <hr><hr>
+
+            <!-- SPAN TAG -->
+            <h2>span tag</h2>
+            <p>The HyperText Markup Language or HTML is the <span class="green">standard markup language</span> for documents designed to be displayed in a web browser.</p>
+            <hr><hr>
+
+            <!-- STRONG TAG -->
+            <h2>strong tag</h2>
+            <p><strong>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</strong></p>
+            <hr><hr>
+
+            <!-- SUB TAG -->
+            <h2>sub tag</h2>
+            <p>This is a <sub>subscript</sub> tag.</p>
+            <hr><hr>
+
+            <!-- SUP TAG -->
+            <h2>sup tag</h2>
+            <p>This is a <sup>superscript</sup> tag.</p>
+            <hr><hr>
+
+            <!-- TIME TAG -->
+            <h2>time tag</h2>
+            <p>Wear green and white on <time datetime="2022-08-14 20:00">Independence day</time></p>
+            <hr><hr>
+
+            <!-- U TAG -->
+            <h2>Underline tag</h2>
+            <p><u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium dolorem eos aspernatur, quaerat at quod in quidem ullam earum provident aperiam quas enim quia ea rem facere vero sapiente? </u></p>
+            <hr><hr>
+
+            <!-- VAR TAG -->
+            <h2>var tag</h2>
+            <p><var>x</var> = 2 <br> <var>y</var> = 4 <br> <var>z</var> = 7</p>
+            <hr><hr>
+
+            <!-- WBR TAG -->
+            <h2>wbr tag</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae totam officia esse vitae corrupti, numquam quisquam! Vero quaerat, minus blanditiis laborum nesciunt consectetur, dignissimos dolores vitae perspiciatis velit, eius ipsa!</p>
+            <hr><hr>
+        </div>
+
+        <div>
+            <!-- AREA & MAP TAG -->
+            <h2>area tag</h2>
+            <img src="imgs/faisalmosque.jpg" alt="faisalmosque" usemap="#workmap" width="400" height="379">
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://ntu.edu.pk">
+                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="">
+            </map>
+            <hr><hr>
+
+            <!-- AUDIO TAG -->
+            <h2>AudioTag</h2>
+            <audio src="#" controls></audio>
+            <hr><hr>
+
+            <!-- IMAGE TAG -->
+            <h2>image tag</h2>
+            <img src="imgs/faisalmosque.jpg" alt="faisalmosque">
+            <hr><hr>
+
+            <!-- VIDEO TAG -->
+            <h2>Video tag</h2>
+            <video src="#" controls></video>
+            <hr><hr>
+        </div>
+
+        <div id="svg">
+            <!-- SVG TAG -->
+            <h2>Svg tag:</h2>
+            <svg >
+                <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="2px" fill="green"></circle>
+            </svg>
+            <hr><hr>
+        </div>
+
+        <div>
+            <!-- DEL AND INS TAG -->
+            <h2>Del and ins tag</h2>
+            <p>My fav color is <del>pink</del> <ins>yellow</ins>.</p>
+            <hr><hr>
+        </div>
+
+        <div>
+            <!-- TABLE TAGS -->
+            <h2>Tags use in a Table:</h2>
+            <br>
+            <!-- <caption>Student Record</caption><br> -->
+            <table border="5px">
+                <colgroup>
+                    <col span="2" style="background-color: blue;">
+                    <col span="1" style="background-color: red;">
+                </colgroup>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No.</th>
+                    <th>Department</th>
+                </tr>
+                <tr>
+                    <td>Uswa</td>
+                    <td>1186</td>
+                    <td>IT</td>
+                </tr>
+                <tr>
+                    <td>Mishaal</td>
+                    <td>1157</td>
+                    <td>TT</td>
+                </tr>
+                <tr>
+                    <td>Sahar</td>
+                    <td>1180</td>
+                    <td>Textile </td>
+                </tr>
+                <tr>
+                    <td>Faiqa</td>
+                    <td>1149</td>
+                    <td>IT</td>
+                </tr>
+            </table>
+            <hr>
+            <hr>
+    
+            <div>
+
+        <div>
+            <!-- FORMS -->
+            <h2>Forms</h2>
+        <footer>
+            <fieldset>
+            <input type="text" placeholder="enter your name" value ="">
+            <br>
+            <br>
+            <input type="password" placeholder="enter your password" name="" id="">
+            <br>
+            <br>
+            <input type="email" placeholder="enter your email" name="" id="">
+            <br>
+            <br>
+            <input type="date" placeholder="enter date" name="" id="">
+            <br>
+            <br>
+            <input type="number" placeholder="enter your number">
+            <br>
+            <br>
+            <select>
+                <option value="Faisalabad">Faisalabad</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Quetta">Quetta</option>
+            </select>
+            <br>
+            <br>
+            <input type="file" placeholder="enter your file" name="" id="">
+            <br>
+            <br>
+            <input type="time" name="" id="">
+            <br>
+            <br>
+            <input type="radio" name="gender" id=""> Male
+            <input type="radio" name="gender">Female
+        
+            <input type="checkbox" name="" id="">
+            <br>
+            </fieldset>
+            <br>
+            
+            <legend>Progress bar:</legend>
+            <progress value="50" max="100"></progress>
+            <br>
+            <br>
+            <hr>
+            <hr>
+
+            <label for="description">Description:</label><br>
+            <textarea name="Description" cols="30" rows="12" width="100%" ></textarea>
+            <br>
+            <br>
+            <button>Submit</button>
+            <br>
+            <br>
+
+            
+        </footer>
+
+
+        <div id="detail">
+            <!-- DETAIL AND SUMMARY TAG -->
+            <h2>Deatil and Summary tags</h2>
+            <details>
+                <summary>NTU</summary>
+                <p>NTU stands for national textile university.</p>
+            </details>
+            <hr><hr>
+
+        <div>
+            <!-- BIG TAG -->
+            <h2>big tag</h2>
+            <p>NTU stands for <big>national textile university.</big></p>
+            <hr><hr>
+
+            <!-- CENTER TAG -->
+            <h2>center tag</h2>
+            <center><p>NTU stands for national textile university..</p></center>
+            <hr><hr>
+
+            <!-- IFRAME & FRAMESET TAG -->
+            <h2>iframe tag</h2>
+            <frameset><iframe src="https://www.ntu.edu.pk" frameborder="10">NTU</iframe></frameset>
+            <hr><hr>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
